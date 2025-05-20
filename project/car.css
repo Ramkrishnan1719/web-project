@@ -1,0 +1,377 @@
+
+
+Skip to content
+Using Gmail with screen readers
+Conversations
+1% of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: in 11 hours
+Details
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+    padding: 10px;
+    background-color: #009688;
+    color: white;
+}
+@media screen and (max-width:768px) {
+    .nav1{
+        display: none;
+    }
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+#icon , #menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width : 768px) {
+    .navbar .menu{
+        display: none;
+    }
+    #icon{
+        display: inline;
+    }
+    #menu-toggle:checked ~ .menu{
+        display: flex;  
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background-color: black;
+        padding: 20px 0;
+    }
+}
+
+#section{
+    
+    
+    background-image: url(../images/images.car.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+    /* position: relative; */
+}
+ .content{
+    top: 200px;
+    left: 350px; 
+    /* bottom: 200px; */
+    text-align: center;
+    color:black;
+    /* position: absolute; */
+}
+#but{
+    background-color: #009688;
+    padding: 15px;
+    color: white;
+    border: none;
+    margin: 30px;
+ }
+ .container{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(3 ,1fr);
+    margin: 30px;
+    gap: 10px;
+    box-shadow: 0px 3px 5px gray;
+    font-size: 20px;
+    text-align: center;
+}
+.input{
+    padding:  10px 50px;
+    margin: 10px;
+
+}
+.lable{
+    margin: 20px;
+}
+#btn{
+    padding:  20px 30px;
+    margin: 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width : 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width : 320px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+#service{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3 ,1fr);
+    margin: 50px;
+    font-size: large;
+    text-align: center;
+}
+
+.ser1{
+    box-shadow: 0px 3px 5px gray;
+    padding: 80px;
+    margin: 5px;
+}
+.ser2{
+    box-shadow: 0px 3px 5px gray;
+    padding: 80px;
+    margin: 10px;
+}
+.ser3{
+    box-shadow: 0px 3px 5px gray;
+    padding: 80px;
+    margin: 10px;
+}
+.ser1:hover{
+    background-color: #009688;
+}
+.ser2:hover{
+    background-color: #009688;
+}
+.ser3:hover{
+    background-color: #009688;
+}
+@media screen and (max-width : 768px) {
+    #service{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen  and (max-width : 320px) {
+    #service{
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+}
+
+/* NEW CAR */
+#new{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    margin:  40px 150px;
+    /* font-size: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width : 768px) {
+    .flex{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+}
+@media screen and (max-width : 320px) {
+    .flex{
+        display: grid;
+        grid-template-columns: auto;
+        /* margin: 5px; */
+    }
+}
+/* FEATURED CARS */
+#car{
+    text-align: center;
+}
+.featured{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    padding: 40px;
+    
+}
+.car1{
+    box-shadow: 0 3px 5px gray;
+    margin:  10px;
+    padding: 30px;
+}
+.car2{
+    box-shadow: 0 3px 5px gray;
+    margin: 10px;
+    padding: 40px;
+}
+.car3{
+    box-shadow: 0 3px 5px gray;
+    margin: 10px;
+    padding: 40px;
+}
+.car4{
+    box-shadow: 0 3px 5px gray;
+    margin: 10px;
+    padding: 40px;
+}
+.car5{
+    box-shadow: 0 3px 5px gray;
+    margin: 40px 10px;
+    padding: 40px;
+}
+.car6{
+    box-shadow: 0 3px 5px gray;
+    margin: 40px 10px;
+    padding: 40px ;
+}
+.car7{
+    box-shadow: 0 3px 5px gray;
+    margin: 40px 10px;
+    padding: 40px;
+}
+.car8{
+    box-shadow: 0 3px 5px gray;
+    margin: 40px 10px;
+    padding: 40px;
+}
+@media screen and (max-width : 768px) {
+    .featured{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+}
+.vice{
+    text-align: center;
+}
+.image{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3 ,1fr);
+    margin: 50px;
+    font-size: large;
+    text-align: center;
+}
+.img1{
+    box-shadow: 0 3px 5px gray;
+    padding: 50px;
+    margin: 25px;
+}
+.img2{
+     box-shadow: 0 3px 5px gray;
+    padding: 50px;
+    margin: 25px;
+}
+.img3{
+     box-shadow: 0 3px 5px gray;
+    padding: 50px;
+    margin: 25px;
+}
+.img1:hover{
+    background-color: #009688;
+}
+.img2:hover{
+    background-color: #009688;
+}
+.img3:hover{
+    background-color: #009688;
+}
+@media screen and (max-width : 768px) {
+    .image{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width :320px) {
+    .image{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+#logo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 90px;
+    padding: 30px;
+
+}
+@media screen and (max-width : 768px) {
+    #logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 50px 50px;
+    }
+}
+@media screen and (max-width : 320px) {
+    #logo{
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+}
+ 
+/* FOOTER SECTION */
+
+#footer{
+    padding: 40px 80px;
+    background-color: #000000;
+    color: white;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    /* font-size: small; */
+}
+footer > div{
+    line-height: 2;
+}
+footer #end{
+    padding: 10px;
+    margin: 10px;
+    background-color: #000000;
+    color: white;
+    border-color: white;
+}
+ .section-6{
+    display: flex;
+    justify-content: space-between;
+    background-color: #009688;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+@media screen and (max-width : 768px) {
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width : 320px) {
+    #footer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

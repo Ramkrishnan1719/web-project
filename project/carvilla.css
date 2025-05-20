@@ -1,0 +1,449 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+:root{
+    --skylue:#009688;
+    --white:#f4f4f4;
+    --black: black;
+    --lightsilver:#f2f2f2;
+    --gray:rgb(89, 88, 92);
+    --graylight:rgb(230, 218, 218);
+}
+/**************************************Nav Bar************************************************/
+.navbar
+{
+    display:flex;
+    justify-content:space-between;
+    background-color: var(--skylue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--white);
+}
+.nav1{
+margin-left: 30px;
+}
+.nav2{
+    margin-right: 30px;
+}
+.nav1 i{
+margin-right: 10px;
+}
+.nav2 i{
+    margin-right: 10px;
+}
+
+/************************ /Nav Bar **************************************/
+
+
+
+
+/************************ Main Nav Bar **************************************/
+.mainnav{
+    background-color: var(--black);
+    display:flex;
+    align-items: center;
+    font-size: large;
+    justify-content: space-between;
+    padding:20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.mainnav1 h1{
+    color: var(--white);
+    padding-left: 30px;
+    cursor: pointer;
+}
+.mainnav2 ul{
+    display: flex;
+    padding-right: 30px;
+    column-gap: 20px;
+}
+.mainnav2 a:hover {
+color: var(--skylue);
+}
+.mainnav2 i{
+    margin-right: 10px;
+}
+.mainnav2 a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/************************ /Main Nav Bar **************************************/
+
+/**************************** image ********************************************/
+.image h1{
+    position: absolute;
+    top:300px;
+    left: 250px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+
+.image h2{
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    color: var(--white);
+}
+#h2{
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    color: var(--white);
+}
+.image a{
+    position: absolute;
+    top: 700px;
+    left: 500px;
+}
+.image button{
+color: var(--white);
+background-color: var(--skylue);
+padding: 20px 40px;
+border-radius: 10px;
+font-size: large;
+cursor: pointer;
+border: none;
+}
+@media screen and (max-width:768px){
+    .image button{
+        position: absolute;
+        top: 200px;
+    }
+}
+
+/************************ /image **************************************/
+
+
+/************************Search **************************************/
+.search{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    margin: 50px 150px;
+    padding: 100px;
+    box-shadow: 1px 1px 10px var(--gray);
+    width: 800px;
+}
+.search button{
+    background-color: var(--skylue);
+    color: var(--white);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+}
+.search a{
+    position: absolute;
+    top: 1300px;
+    left: 600px;
+}
+label{
+    font-size: large;
+    font-weight: bolder;
+    color: var(--gray);
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+    display: grid;
+}
+.box1 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+.box2 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+.box3 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+.box4 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+.box5 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+.box6 select{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    height: 50px;
+    background-color: var(--lightsilver);
+    border: none;
+    color: var(--gray);
+    font-size: large;
+}
+
+@media screen and (max-width:768px){
+    .search {
+        width: 100px;
+    }
+}
+/************************ /Search **************************************/
+
+
+
+/************************ Car **************************************/
+.car
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-content: space-evenly; */
+    padding: 50px;
+}
+@media screen and (max-width:768px)
+{
+    .car{
+display: grid;
+grid-template-columns:repeat(2,1fr) ;
+    }
+}
+@media screen and (max-width:320px){
+        .car{
+display: grid;
+grid-template-columns:auto;
+    }
+}
+.car1,.car2,.car3{
+    border: 2px solid var(--lightsilver);
+    padding: 100px 20px;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+.car1:hover,.car2:hover,.car3:hover{
+    background-color: var(--skylue);
+    color: var(--white);
+}
+.car1 i,.car2 i,.car3 i{
+    margin-left:100px;
+}
+.car p{
+    width:300px;
+    font-size: large;
+}
+.car h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.car3 h3{
+    padding-left: 50px;
+}
+
+/************************ /Car **************************************/
+
+
+
+/************************ New Car **************************************/
+#new{
+    margin-top: 100px;
+    margin-left: 700px;
+    color: var(--gray);
+}
+.newcar1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.content1{
+    margin-top: 90px;
+    font-size: large;
+}
+.content1 p{
+    margin-top: 30px;
+    color: var(--gray);
+}
+.newcar1 button{
+color: var(--white);
+background-color: var(--skylue);
+padding: 20px 40px;
+margin-top: 20px;
+border-radius: 10px;
+font-size: large;
+cursor: pointer;
+border: none;
+}
+.newcar1 a{
+    position: absolute;
+    top: 2440px;
+    left: 800px;
+}
+/************************ / New Car **************************************/
+
+
+
+
+/************************ Featured Car **************************************/
+#feature{
+    color: var(--gray);
+    margin-left: 700px;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.featured{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 20px;
+    margin: 20px 100px;
+}
+@media screen and (max-width:768px){
+    .featured{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:320px){
+    .featured{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    border: 1px solid var(--graylight);
+    padding:60px 0 ;
+}
+.featured img{
+padding-left: 40px;
+padding-bottom: 40px;
+}
+.featured p{
+padding-left: 20px;
+line-height: 30px;
+}
+/************************ /Featured Car **************************************/
+
+
+
+
+/**************************************Client say************************************************/
+#client{
+    color: var(--gray);
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+.clients{
+display: flex;
+column-gap: 20px;
+margin: 0 150px;
+text-align: center;
+}
+
+.client1,.client2,.client3{
+    border: 1px solid var(--graylight);
+    padding: 80px 50px;
+}
+.client1:hover{
+    background-color: var(--skylue);
+    color: var(--white);
+}
+.client2:hover{
+    background-color: var(--skylue);
+    color: var(--white);
+}
+.client3:hover{
+    background-color: var(--skylue);
+    color: var(--white);
+}
+.para1{
+    padding: 40px 0;
+    font-size: large;
+}
+/************************************** /Client say************************************************/
+
+
+
+
+/************************************** Honda************************************************/
+.honda{
+    display:flex;
+    justify-content: space-between;
+    margin: 110px 160px;
+}
+
+/************************************** /Honda ************************************************/
+
+
+
+/************************************** Footer ************************************************/
+
+.footer{
+    /* margin-bottom: 160px; */
+    display: flex;
+line-height: 50px;
+    justify-content:space-between;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 100px;
+    font-size: large;
+}
+
+#email{
+    background-color: var(--black);
+    box-shadow: 1px 1px 10px var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/************************************** /Footer ************************************************/
+
+
+
+/************************************** Final ************************************************/
+.final{
+    background-color: var(--skylue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+.final2 i{
+    padding-right: 10px;
+}
+/************************************** /Final ************************************************/
+
